@@ -3,7 +3,7 @@ const argv  = require('yargs')
 const yargs = require('yargs')
 const chalk = require('chalk')
 
-const url = 'http://api.weatherstack.com/current?access_key=a125d43aef2fb00cac6ffb80b418fed8&query='
+const url = 'http://api.weatherstack.com/current?access_key=your_api_key&query='
 
 const WeatherInfo = (fullurl) => {
     request({url: fullurl,json: true},(error,response) => 
